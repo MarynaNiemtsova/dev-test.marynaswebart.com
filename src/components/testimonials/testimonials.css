@@ -1,0 +1,88 @@
+#testimonials {
+  height: 50vh;
+  padding: 10px;
+}
+.test_section {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.test_text h3 {
+  font-family: "Norwester", sans-serif;
+  font-size: 60px;
+  line-height: 72px;
+}
+.test_text p {
+  font-size: 16px;
+  line-height: 18.3px;
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  padding: 1rem 50rem 0.1rem 0.1rem;
+  text-align: left;
+  transition: var(--transition);
+}
+.test_header {
+  margin-left: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr;
+}
+.test_header h6 {
+  font-size: 14px;
+  font-family: "Norwester", sans-serif;
+  line-height: 16.8px;
+  font-weight: 400;
+}
+
+/*==========Media Queries (MEDIUM DEVICES)==============*/
+@media screen and (max-width: 1024px) {
+  #testimonials {
+    height: 35vh;
+  }
+  .test_text h3 {
+    font-size: 42px;
+    line-height: 55px;
+    width: 40rem;
+  }
+  .test_section {
+    margin-left: 5rem;
+  }
+  .test_header {
+    grid-template-columns: 1fr 1fr;
+    gap: 0rem;
+    margin-left: -4rem;
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+  }
+  .test_text p {
+    padding: 1rem;
+  }
+}
+
+/*==========Media Queries (SMALL DEVICES)==============*/
+@media screen and (max-width: 600px) {
+  .test_section {
+    grid-template-columns: 1fr;
+    margin-left: 0.6rem;
+  }
+  .test_header h6 {
+    font-size: 12px;
+    line-height: 14.4px;
+  }
+  .test_header {
+    grid-template-columns: 1fr 1fr 4fr;
+
+    margin-bottom: 2rem;
+    margin-left: -0.1rem;
+  }
+  .test_text h3 {
+    font-size: 30px;
+    line-height: 36px;
+    width: 21rem;
+  }
+  .test_text p {
+    font-size: 14px;
+    line-height: 16.02px;
+
+    border-radius: 1rem;
+    padding: 1rem 11rem 0.1rem 0.1rem;
+  }
+}

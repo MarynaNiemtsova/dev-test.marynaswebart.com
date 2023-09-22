@@ -1,0 +1,138 @@
+#about {
+  background: linear-gradient(80.56deg, rgba(5, 39, 61, 0.3) 8.53%);
+}
+.about__container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 15%;
+}
+.small_name {
+  display: none;
+}
+.about_text {
+  margin-left: 30rem;
+}
+.welcome_text {
+  font-family: "Norwester", sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 60px;
+}
+.about_header {
+  font-size: 14px;
+  font-family: "Norwester", sans-serif;
+  line-height: 16.8px;
+  font-weight: 400;
+  margin-left: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  margin-top: 9rem;
+  margin-left: -11rem;
+}
+.about_header h6 {
+  font-size: 14px;
+  line-height: 16.8px;
+}
+.about_section {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.about__card {
+  margin-top: 8rem;
+  font-size: 16px;
+
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  padding: 1rem 6rem;
+  text-align: left;
+  transition: var(--transition);
+}
+.layers {
+  width: 200%;
+  margin-top: -30rem;
+  margin-left: -2rem;
+}
+
+.btn__contact {
+  margin-left: 6rem;
+}
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.animate-on-scroll.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/*==========Media Queries (MEDIUM DEVICES)==============*/
+@media screen and (max-width: 1024px) {
+  .about__card {
+    margin-top: 1rem;
+
+    padding: 1rem 1rem;
+    text-align: left;
+  }
+  .about_header {
+    grid-template-columns: 1fr 1fr;
+    margin-left: -5rem;
+    margin-top: 2rem;
+  }
+  .btn__contact {
+    margin-left: 1rem;
+    margin-top: 1.5rem;
+  }
+}
+/*==========Media Queries (SMALL DEVICES)==============*/
+@media screen and (max-width: 600px) {
+  #about {
+    height: 70vh;
+  }
+  .small_name {
+    display: block;
+    font-size: 12px;
+  }
+  .big_name {
+    display: none;
+  }
+  .about_header h6 {
+    font-size: 12px;
+  }
+
+  .about__card {
+    font-size: 14px;
+  }
+  .about__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 3rem;
+  }
+
+  .welcome_text {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .about_text {
+    margin-left: 1rem;
+    padding-top: 2rem;
+  }
+  .about_section {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: -16rem;
+  }
+  .about_header {
+    grid-template-columns: 1fr 1fr 4fr;
+    margin-left: 1rem;
+    margin-top: 5rem;
+  }
+  .layers {
+    width: 100%;
+    margin-top: -19.5rem;
+    margin-left: 0.1rem;
+  }
+}

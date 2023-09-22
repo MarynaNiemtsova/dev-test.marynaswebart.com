@@ -1,0 +1,197 @@
+header {
+  height: 95vh;
+  padding-top: 7rem;
+}
+
+.header__container {
+  text-align: center;
+  height: 100%;
+  position: relative;
+}
+
+.header__maine {
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr;
+  gap: 1.2rem;
+  text-align: center;
+}
+
+.menu_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-top: -3rem;
+}
+
+.logo {
+  width: 201px;
+  height: 35.5px;
+}
+
+.menu_button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu_button a {
+  margin-right: 20px;
+}
+.menu {
+  margin-top: 0.1rem;
+  width: 31px;
+  margin-left: 1rem;
+}
+.down {
+  width: 1.2rem;
+}
+.right {
+  width: 2rem;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+.title_header {
+  font-family: "Norwester";
+  color: var(--color-white);
+  text-align: left;
+}
+.text {
+  font-family: "Norwester", sans-serif;
+  line-height: 72px;
+  color: var(--color-white);
+  font-size: 60px;
+  text-align: left;
+}
+
+.btn__contact {
+  color: var(--color-white);
+}
+.article_button {
+  margin-top: 22rem;
+  margin-left: 28rem;
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  gap: 1rem;
+}
+.header {
+  margin-top: 8rem;
+  margin-left: -48rem;
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  padding: 1rem 48rem;
+  text-align: left;
+  transition: var(--transition);
+}
+.header1 {
+  font-size: 16px;
+  color: var(--color-white);
+  line-height: 18.3px;
+  text-align: left;
+}
+
+#home {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, #011022 100%),
+    url("/src/assets/01.jpg");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*==========Media Queries (MEDIUM DEVICES)==============*/
+@media screen and (max-width: 1024px) {
+  header {
+    height: 98vh;
+  }
+  #home {
+    background-attachment: scroll;
+    background-size: cover;
+  }
+  .header {
+    margin-top: 13rem;
+    margin-left: -2.4rem;
+
+    padding: 1rem 2.3rem;
+  }
+  .article_button {
+    margin-left: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.1rem;
+    margin-top: 19rem;
+    margin-left: 0.1rem;
+  }
+  .btn_header {
+    margin-left: -12rem;
+  }
+
+  .btn_en {
+    display: none;
+  }
+  .down {
+    display: none;
+  }
+}
+
+/*==========Media Queries (SMALL DEVICES)==============*/
+@media screen and (max-width: 600px) {
+  header {
+    height: 100vh;
+    margin-bottom: 12rem;
+  }
+  #home {
+    background-position: center;
+    background-position-y: bottom;
+  }
+
+  .logo {
+    width: 103px;
+  }
+  .menu {
+    width: 18px;
+    margin-left: 0.2rem;
+    margin-top: -0.1rem;
+  }
+
+  .title_header {
+    font-size: 16px;
+  }
+  .text {
+    font-weight: 400;
+    line-height: 54px;
+
+    font-size: 45px;
+  }
+  .header1 {
+    font-size: 14px;
+    font-weight: 450;
+    line-height: 16.02px;
+    margin-top: 6rem;
+  }
+  .article_button {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    margin-top: 20rem;
+  }
+
+  .header {
+    margin-top: 3rem;
+  }
+
+  .header__container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .btn_header {
+    margin-left: -11.5rem;
+    margin-top: 2rem;
+  }
+  .logo {
+    padding-top: 0.8rem;
+    margin-left: -0.5rem;
+  }
+  .menu_header {
+    margin-top: -6rem;
+  }
+}

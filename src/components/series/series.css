@@ -1,0 +1,129 @@
+#series {
+  background-image: url("/src/assets/02.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background: linear-gradient(
+      180deg,
+      #011022 5%,
+      rgba(4, 29, 47, 0) 28.65%,
+      rgba(4, 25, 43, 0) 70.18%,
+      #011022 100%
+    ),
+    url("/src/assets/02.jpg");
+}
+.fishing_content {
+  position: relative;
+  top: 40rem;
+  left: 1rem;
+}
+
+.fishing_series {
+  font-family: "Norwester", sans-serif;
+  font-size: 12px;
+  margin-bottom: 1rem;
+}
+
+.fishing_text {
+  margin-top: 30rem;
+  margin-left: 58rem;
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  padding: 1rem 0.5rem;
+  text-align: left;
+  transition: var(--transition);
+  font-size: 16px;
+  line-height: 18.3px;
+}
+
+.fishing_text h4 {
+  margin-bottom: 0.8rem;
+}
+.fishing_text p {
+  margin-bottom: 1.3rem;
+}
+
+.fishing_text a {
+  text-decoration: underline;
+  line-height: 16.02px;
+}
+.f_series h2 {
+  font-size: 100px;
+  font-family: "Norwester", sans-serif;
+  font-weight: 400;
+  line-height: 100px;
+}
+
+.fishing_goods span {
+  padding: 4.4rem;
+  position: relative;
+  bottom: 20px;
+  right: 80px;
+  font-family: norwester;
+}
+
+.fishing_meter {
+  width: 128px;
+  position: relative;
+  bottom: 45px;
+  left: 20px;
+}
+
+h5 {
+  font-size: 12px;
+}
+
+/*==========Media Queries (MEDIUM DEVICES)==============*/
+@media screen and (max-width: 1024px) {
+  #series {
+    height: 100vh;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .fishing_text {
+    margin-top: 20rem;
+    margin-left: 40rem;
+  }
+  .fishing_content {
+    position: relative;
+    top: 28rem;
+    left: 1rem;
+  }
+}
+
+/*==========Media Queries (SMALL DEVICES)==============*/
+@media screen and (max-width: 600px) {
+  #series {
+    border: none;
+    outline: none;
+    text-decoration: none;
+    background-size: 400%;
+    height: 90vh;
+  }
+
+  .fishing_series {
+    display: none;
+  }
+  .fishing_text {
+    margin-top: 31rem;
+    margin-left: 0.2rem;
+    padding: 1rem 0.5rem;
+    font-size: 14px;
+    line-height: 16.2px;
+  }
+  .f_series h2 {
+    position: relative;
+    bottom: 28rem;
+    font-size: 47px;
+    line-height: 45px;
+  }
+
+  .fishing_goods span {
+    bottom: 21rem;
+  }
+
+  .fishing_meter {
+    bottom: 22.5rem;
+  }
+}
