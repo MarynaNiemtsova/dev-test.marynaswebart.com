@@ -3,7 +3,7 @@
 
 
 ## Preview
-[Site Preview]([https://dev-test.marynaswebart.com/])
+[Site Preview](https://dev-test.marynaswebart.com/)
 
 
 
